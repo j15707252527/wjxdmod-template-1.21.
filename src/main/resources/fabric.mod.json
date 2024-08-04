@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "wjxdmod",
+	"version": "${version}",
+	"name": "WjxdMod",
+	"description": "我是一个nb的mog",
+	"authors": [
+		"Dr。杰哥"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/wjxdmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.wjxabc.wjxdmod.WjxdMod"
+		],
+		"fabric-datagen": [
+			"com.wjxabc.wjxdmod.WjxdModDataGenerator"
+		],
+		"client": ["com.wjxabc.wjxdmod.WjxModClient"
+		]
+	},
+	"mixins": [
+		"wjxdmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
